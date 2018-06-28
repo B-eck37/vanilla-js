@@ -9,6 +9,17 @@
 
 <body>
     <h1>VanillaJs Swapi</h1>
+    <button>Click Me</button>
+
+
+    <script type='text/javascript'>
+        const button = document.querySelector('button')
+        button.onclick = function(){
+            this.style.fontSize = '35px'
+            // console.log('clicked!')
+            console.dir(this)
+        }
+    </script>
 </body>
 
 </html>
