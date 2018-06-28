@@ -2,6 +2,14 @@ const root = document.querySelector('#root');
 
 async function render(){
     const appContent = await makeApp();
+
+    // slower solution
+    // root.innerHTML = appContent;
+
+    // Our Solution
+    while(root.firstChild){
+        root.removeChild(root.firstChild)
+    }
     root.appendChild(appContent)
 }
 
