@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilly</title>
+</head>
+
+<body>
+        <header>
+            <h1>VanillaJs Swapi</h1>
+        </header>
+        <main>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+            <div class='lorem'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore laboriosam incidunt necessitatibus atque fugit nihil quis cumque quo? Non natus quia vitae alias laboriosam provident explicabo aperiam optio quam!</div>
+        </main>
+        
+    <style>
+
+        header {
+            background: aqua;
+            padding: 10px; 
+            position: sticky;
+            top: 0px;
+            transition: all 1s;
+        }
+        .lorem{
+            font-size: 48px;
+        }
+    </style>
+    <script type='text/javascript'>
+        window.addEventListener('scroll', function(){
+            const top = window.scrollY;
+            const main = document.querySelector('main');
+            const header = document.querySelector('header');
+            if(top > main.offsetTop + 150){
+                header.style.opacity = 0;
+            } else {
+                header.style.opacity = 1;
+            }
+        })
+    </script>
+</body>
+
+</html>
